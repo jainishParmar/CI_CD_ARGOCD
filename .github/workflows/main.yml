@@ -38,5 +38,5 @@ jobs:
         with:
           push: true
           tags: |
-             ${{ secrets.DOCKERHUB_USERNAME }}/CI_CD_ARGOCD:latest
-             ${{ secrets.DOCKERHUB_USERNAME }}/CI_CD_ARGOCD:${{ github.sha }}
+             ${{ secrets.DOCKERHUB_USERNAME }}/ci_cd_argocd:latest
+             ${{ secrets.DOCKERHUB_USERNAME }}/ci_cd_argocd:${{ github.sha }}
