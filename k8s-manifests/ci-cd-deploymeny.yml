@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ci-cd-argocd
+  labels:
+    app: ci-cd-argocd
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ci-cd-argocd
+  template:
+    metadata:
+      labels:
+        app: ci-cd-argocd
+    spec:
+      containers:
+        - name: ci-cd-argocd
+          image: jainishparmar/ci_cd_argocd:latest   # your DockerHub image
+          ports:
+            - containerPort: 8080
