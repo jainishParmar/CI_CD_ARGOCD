@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: ci-cd-argocd
-          image: jainishparmar/ci_cd_argocd:latest   # your DockerHub image
+          image: jainishparmar/ci_cd_argocd:14af8859408349fdf772c0a6fb0308bbe03b0f23
           ports:
             - containerPort: 8080
