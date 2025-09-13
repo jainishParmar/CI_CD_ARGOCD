@@ -40,3 +40,34 @@ jobs:
           tags: |
              ${{ secrets.DOCKERHUB_USERNAME }}/ci_cd_argocd:latest
              ${{ secrets.DOCKERHUB_USERNAME }}/ci_cd_argocd:${{ github.sha }}
+          
+      - name: Notify on success
+        if: success()
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          username: ${{ secrets.EMAIL_USERNAME }}
+          password: ${{ secrets.EMAIL_PASSWORD }}
+          subject: "✅ Build Successful: ${{ github.repository }}"
+          to: your_email@example.com
+          from: GitHub Actions <${{ secrets.EMAIL_USERNAME }}>
+          body: |
+            Your Spring Boot app was built & pushed successfully.
+            Commit: ${{ github.sha }}
+            Repo: ${{ github.repository }}
+            
+      - name: Notify on failure
+        if: failure()
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          username: ${{ secrets.EMAIL_USERNAME }}
+          password: ${{ secrets.EMAIL_PASSWORD }}
+          subject: "❌ Build Failed: ${{ github.repository }}"
+          to: your_email@example.com
+          from: GitHub Actions <${{ secrets.EMAIL_USERNAME }}>
+          body: |
+            Build failed for commit: ${{ github.sha }}
+            Check logs at: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
