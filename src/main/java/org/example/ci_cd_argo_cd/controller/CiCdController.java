@@ -12,4 +12,9 @@ public class CiCdController {
     public ResponseEntity<String> helloController(){
         return ResponseEntity.ok("Auto sync working");
     }
+
+    @GetMapping("/notification")
+    public ResponseEntity<String> NotificationController(){
+        return ResponseEntity.ok("ArgoCd Notification Working");
+    }
 }
