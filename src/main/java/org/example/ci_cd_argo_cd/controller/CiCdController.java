@@ -10,6 +10,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class CiCdController {
     @GetMapping
     public ResponseEntity<String> helloController(){
-        return ResponseEntity.ok("Hello World");
+        return ResponseEntity.ok("Github Actions And ArgoCd deployment Email Notification Added");
     }
 }
