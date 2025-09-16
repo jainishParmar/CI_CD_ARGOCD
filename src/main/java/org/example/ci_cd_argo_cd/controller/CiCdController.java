@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("ci-cd/")
+@RequestMapping("ci-cd")
 public class CiCdController {
     @GetMapping
     public ResponseEntity<String> helloController(){
