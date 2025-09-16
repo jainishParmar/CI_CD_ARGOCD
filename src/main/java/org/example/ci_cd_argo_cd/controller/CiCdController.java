@@ -24,7 +24,7 @@ public class CiCdController {
     }
 
          @GetMapping("argo-noti")
-    public ResponseEntity<String> autoSyncController(){
+    public ResponseEntity<String> argoNotiController(){
         return ResponseEntity.ok("ArgoCd email notification Working");
     }
 }
