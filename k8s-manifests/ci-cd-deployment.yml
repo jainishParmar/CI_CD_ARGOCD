@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: ci-cd-argocd
-          image: jainishparmar/ci_cd_argocd:78181c6adc7745c5b0574b62c0c0ac6f6d8f57b8
+          image: jainishparmar/ci_cd_argocd:76f87ef9e833e1984b9eb86fd82f9381fd14cf98
           ports:
             - containerPort: 8080
