@@ -17,4 +17,9 @@ public class CiCdController {
     public ResponseEntity<String> NotificationController(){
         return ResponseEntity.ok("ArgoCd Notification Working");
     }
+
+      @GetMapping("/auto")
+    public ResponseEntity<String> autoSyncController(){
+        return ResponseEntity.ok("ArgoCd autosync Working");
+    }
 }
