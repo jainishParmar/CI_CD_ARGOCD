@@ -1,7 +1,7 @@
 resources:
   - ci-cd-deployment.yml
+  - ci-cd-service.yml
   # add other resources if present, e.g.:
-  # - ci-cd-service.yml
 
 images:
   # this should match the image string used in your Deployment (name only, not alias)
