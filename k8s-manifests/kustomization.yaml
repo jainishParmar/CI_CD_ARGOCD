@@ -2,9 +2,6 @@ resources:
   - ci-cd-deployment.yml
   - ci-cd-service.yml
   # add other resources if present, e.g.:
-
 images:
-  # this should match the image string used in your Deployment (name only, not alias)
   - name: jainishparmar/ci_cd_argocd
-    # set a tag that matches current repo (can be the SHA or 'latest' initially)
-    newTag: "initial"
+    newTag: ecaaa62d0d2ae8834e1dfd84c1519cced32ba42a
