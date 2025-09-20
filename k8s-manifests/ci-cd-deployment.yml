@@ -14,6 +14,8 @@ spec:
       labels:
         app: ci-cd-argocd
     spec:
+      imagePullSecrets:
+        - name: dockerhub-secret
       containers:
         - name: ci-cd-argocd
           image: jainishparmar/ci_cd_argocd:dafd72e24a94b8db673b3fb3b6caeef7053eb710
