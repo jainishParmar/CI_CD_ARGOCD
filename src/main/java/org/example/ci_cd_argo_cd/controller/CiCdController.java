@@ -28,6 +28,11 @@ public class CiCdController {
         return ResponseEntity.ok("ArgoCd imageUpdater Working");
     }
 
+           @GetMapping("infiniteLoop")
+    public ResponseEntity<String> infiniteLoopController(){
+        return ResponseEntity.ok("ArgoCd infiniteLoop issue resolved");
+    }
+
          @GetMapping("argo-noti")
     public ResponseEntity<String> argoNotiController(){
         return ResponseEntity.ok("ArgoCd email notification Working");
