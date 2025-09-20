@@ -23,6 +23,11 @@ public class CiCdController {
         return ResponseEntity.ok("ArgoCd autosync Working");
     }
 
+       @GetMapping("imageUpdater")
+    public ResponseEntity<String> autoImageController(){
+        return ResponseEntity.ok("ArgoCd imageUpdater Working");
+    }
+
          @GetMapping("argo-noti")
     public ResponseEntity<String> argoNotiController(){
         return ResponseEntity.ok("ArgoCd email notification Working");
