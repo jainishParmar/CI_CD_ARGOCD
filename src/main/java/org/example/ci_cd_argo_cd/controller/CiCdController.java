@@ -30,7 +30,7 @@ public class CiCdController {
 
            @GetMapping("infiniteLoop")
     public ResponseEntity<String> infiniteLoopController(){
-        return ResponseEntity.ok("ArgoCd infiniteLoop issue resolved");
+        return ResponseEntity.ok("ArgoCd infiniteLoop issue finally resolved");
     }
 
          @GetMapping("argo-noti")
