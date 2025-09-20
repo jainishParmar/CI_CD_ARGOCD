@@ -4,4 +4,4 @@ resources:
   # add other resources if present, e.g.:
 images:
   - name: jainishparmar/ci_cd_argocd
-    newTag: ecaaa62d0d2ae8834e1dfd84c1519cced32ba42a
+    newTag: 57c0b4d41c68282d3457c918bbbe9a0f31241d8c
