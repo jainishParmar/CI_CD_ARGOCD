@@ -25,7 +25,7 @@ public class CiCdController {
 
        @GetMapping("imageUpdater")
     public ResponseEntity<String> autoImageController(){
-        return ResponseEntity.ok("ArgoCd imageUpdater Working");
+        return ResponseEntity.ok("Finally ArgoCd imageUpdater Working");
     }
 
            @GetMapping("infiniteLoop")
