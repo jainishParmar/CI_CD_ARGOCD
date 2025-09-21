@@ -28,6 +28,14 @@ public class CiCdController {
         return ResponseEntity.ok("Finally ArgoCd imageUpdater Working");
     }
 
+      @GetMapping("oneCommitBehind")
+    public ResponseEntity<String> oneCommitBehindController(){
+        return ResponseEntity.ok("One Commit Behind");
+    }
+
+
+    
+
            @GetMapping("infiniteLoop")
     public ResponseEntity<String> infiniteLoopController(){
         return ResponseEntity.ok("ArgoCd infiniteLoop issue finally resolved");
