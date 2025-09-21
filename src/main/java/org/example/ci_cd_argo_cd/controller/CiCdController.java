@@ -33,6 +33,14 @@ public class CiCdController {
         return ResponseEntity.ok("One Commit Behind");
     }
 
+        @GetMapping("finalCheck")
+    public ResponseEntity<String> finalCheckController(){
+        return ResponseEntity.ok("Everything Working Properly");
+    }
+
+    
+    
+
 
     
 
