@@ -4,3 +4,4 @@
 https://hub.docker.com/repository/docker/jainishparmar/ci_cd_argocd/tags
 -- Image-Updater
 Hello world
+hello world from dev
