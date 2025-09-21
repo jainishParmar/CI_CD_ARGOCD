@@ -38,6 +38,12 @@ public class CiCdController {
         return ResponseEntity.ok("Everything Working Properly");
     }
 
+         @GetMapping("webhooktest")
+    public ResponseEntity<String> webhookTestController(){
+        return ResponseEntity.ok("webHook Working Properly");
+    }
+
+
     
     
 
