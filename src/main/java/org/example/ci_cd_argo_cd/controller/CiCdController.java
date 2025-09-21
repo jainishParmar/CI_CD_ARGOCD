@@ -40,7 +40,7 @@ public class CiCdController {
 
          @GetMapping("webhooktest")
     public ResponseEntity<String> webhookTestController(){
-        return ResponseEntity.ok("Finally webHook+ngrok Working Properly");
+        return ResponseEntity.ok("Finally webHook+ngrok Working Properly || Updated New Ngrok URL");
     }
 
 
